@@ -1,0 +1,14 @@
+default:
+    extensions:
+        Behat\MinkExtension:
+            # You will have to chage the base url dependent on your environment setup
+            base_url: http://10.0.3.35:8000
+            javascript_session: selenium2
+            browser_name: 'chrome'
+            selenium2:
+                wd_host: "http://10.0.3.35:4444/wd/hub"
+    suites:
+        default:
+            contexts:
+                - FeatureContext
+                - Behat\MinkExtension\Context\MinkContext
