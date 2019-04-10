@@ -9,6 +9,9 @@ java -jar selenium-server-standalone-3.3.1.jar -role hub
 # Host
 java -Dwebdriver.chrome.driver="chromedriver.exe" -jar selenium-server-standalone-3.141.59.jar -role node -hub "http://10.0.3.35:4444/grid/register/"
 
+# Init environment
+php composer.phar install
+
 # Run tests
 vendor/bin/behat -v -c behat.yml features
 
