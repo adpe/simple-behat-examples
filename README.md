@@ -15,3 +15,6 @@ vendor/bin/behat -v -c behat.yml features
 # Add missing functions
 vendor/bin/behat --dry-run --append-snippets
 ```
+
+## Credits
+The form ind therefore the credits are taken from this [repo](https://github.com/RobDWaller/behat-selenium-chrome).
